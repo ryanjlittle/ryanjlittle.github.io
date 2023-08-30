@@ -1,0 +1,35 @@
+---
+layout: full-width
+title: "Cryptography Resources"
+permalink: /resources/
+author_profile: false
+---
+
+<br>
+I spent a lot of my first year in grad school trying to pick up the basics in different areas of cryptography. These are the introductory materials in each topic that helped me the most.
+
+<h2 class="archive__large__subtitle">Multi-Party Computation</h2>
+{% for post in site.resources-mpc %}
+  {% include archive-single-resource.html %}
+{% endfor %}
+
+<h2 class="archive__large__subtitle">Universal Composability</h2>
+{% for post in site.resources-uc %}
+  {% include archive-single-resource.html %}
+{% endfor %}
+
+<h2 class="archive__large__subtitle">Lattice-Based Cryptography</h2>
+{% for post in site.resources-lattice %}
+  {% include archive-single-resource.html %}
+{% endfor %}
+
+<h2 class="archive__large__subtitle">Differential Privacy</h2>
+{% for post in site.resources-dp %}
+  {% include archive-single-resource.html %}
+{% endfor %}
+
+<h2 class="archive__large__subtitle">Contextualizing Cryptography</h2>
+{% for post in site.resources-context %}
+  {% include archive-single-resource.html %}
+{% endfor %}
+
