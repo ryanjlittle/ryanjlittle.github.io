@@ -20,7 +20,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-      <!--<button class="btn btn--inverse">Follow</button>-->
+      <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
@@ -32,7 +32,18 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <!-- Hack to get around email scrapers -->
+        <li><script> 
+            e1='ryan';
+            e2='lit';
+            e3='@';
+            e4='bu.';
+            e5='edu';
+            email = e1 + e2 + e3 + e4 + e5;
+            document.write('<a href="mailto:' + email + '"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>');
+            </script>
+        </li>
+        <!--<li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>-->
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
