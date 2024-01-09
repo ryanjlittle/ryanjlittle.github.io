@@ -6,5 +6,5 @@ author: "Oded Regev, Vadim Lyubashevsky, Chris Peikert and Craig Gentry"
 link: "https://www.youtube.com/playlist?list=PL8Vt-7cSFnw2OmpCmPLLwSx0-Yqb2ptqO"
 ---
 
-A series of talks from various speakers. Starts with the basics and culminates with Gentry's FHE scheme. 
+A series of talks from various speakers. Starts from the basics and covers some fundamental constructions, including a lot of time spent on FHE. 
 
