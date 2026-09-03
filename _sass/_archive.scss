@@ -15,11 +15,7 @@
   }
 
   a {
-    text-decoration: underline;
-
     &:hover {
-      text-decoration: underline;
-
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
@@ -100,11 +96,23 @@
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
-
-  .archive__item-title {
-    text-decoration: underline;
-  }
 }
+  
+.archive__item a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.archive__item a:hover {
+  color: $link-color;
+  text-decoration: underline $link-color;
+}
+
+.archive__item p {
+  color:  mix(#fff, $gray, 25%);
+  margin-top: 0;
+}
+
 
 
 /*

@@ -86,7 +86,7 @@ author:
   location         : "Boston, MA"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=cEgmFecAAAAJ"
   email            : "placeholder"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
